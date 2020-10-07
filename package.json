@@ -1,0 +1,30 @@
+{
+  "name": "online-examination-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add-question.html",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.3.1",
+    "lite-server": "^2.5.4",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiruthikj/Online-Examination-System.git"
+  },
+  "author": "Hiruthik J",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiruthikj/Online-Examination-System/issues"
+  },
+  "homepage": "https://github.com/hiruthikj/Online-Examination-System#readme"
+}

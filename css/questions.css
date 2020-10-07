@@ -1,7 +1,7 @@
 body {
 background-color: lightblue;
 font-family: Helvetica;
-background-image: url(blue.jpg) violet;
+background-image: url("../img/blue.jpg") violet;
 }
 
 #main {

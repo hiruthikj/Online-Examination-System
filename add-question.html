@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Add Question</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/add-question.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-dark bg-primary navbar-extend-sm fixed-top">
+      <div class="container">
+        <a class = "navbar-brand" href="#">Exam Portal</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class = "jumbotron row-header">
+        <div class = "container">
+            <div class = "row row-header">
+                <div class = "col-12 col-sm-6">
+                    <h1>Add Question To Question Bank</h1>
+
+                <div>
+                  <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <form action="/addqn" method="post">
+      <div class="container">
+        <div class = "row row-content">
+          <fieldset>
+            <legend>Question Description</legend>
+            <label for="">
+              <textarea name="qn-desc" rows="5" cols="80" class = "col-8 justify-content-center" placeholder="Enter Question"></textarea>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class = "row row-content">
+          <fieldset>
+            <legend>Image</legend>
+            <label for="">
+              <input type="file" name="file" value="">
+            </label>
+          </fieldset>
+        </div>
+
+        <div class = "row row-content">
+          <fieldset>
+            <legend>Option 1</legend>
+            <label for="">
+              <textarea name="qn-desc" rows="1" cols="80" class = "col-8 justify-content-center" placeholder="Option 1"></textarea>
+            </label>
+            <legend>Option 2</legend>
+            <label for="">
+              <textarea name="qn-desc" rows="1" cols="80" class = "col-8 justify-content-center" placeholder="Option 2"></textarea>
+            </label>
+            <legend>Option 3</legend>
+            <label for="">
+              <textarea name="qn-desc" rows="1" cols="80" class = "col-8 justify-content-center" placeholder="Option 3"></textarea>
+            </label>
+            <legend>Option 4</legend>
+            <label for="">
+              <textarea name="qn-desc" rows="1" cols="80" class = "col-8 justify-content-center" placeholder="Option 4"></textarea>
+            </label>
+          </fieldset>
+        </div>
+        <div class = "row row-content">
+          <fieldset>
+            <legend>Solution</legend>
+            <label for="">
+              <input type="radio" name="choice" value="option 1" class=""> Option 1<br>
+              <input type="radio" name="choice" value="option 2" class=""> Option 2<br>
+              <input type="radio" name="choice" value="option 3" class=""> Option 3<br>
+              <input type="radio" name="choice" value="option 4" class=""> Option 4
+            </label>
+          </fieldset>
+        </div>
+
+      </div>
+    </form>
+
+
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
