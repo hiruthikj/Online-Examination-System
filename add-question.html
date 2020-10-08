@@ -14,15 +14,26 @@
 
   <body>
 
-    <nav class="navbar navbar-dark bg-primary navbar-extend-sm fixed-top">
-      <div class="container">
-        <a class = "navbar-brand" href="#">Exam Portal</a>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <a href="#" class="navbar-brand"><h3>Exam Portal</h3></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">Exams</a>
+                    <a href="#" class="nav-item nav-link active">Question Bank</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <header class = "jumbotron row-header">
         <div class = "container">
@@ -43,7 +54,7 @@
           <fieldset>
             <legend>Question Description</legend>
             <label for="">
-              <textarea name="qn-desc" rows="5" cols="80" class = "col-8 justify-content-center" placeholder="Enter Question"></textarea>
+              <textarea name="qn-desc" rows="5" cols="80" class = "col-10 justify-content-center" placeholder="Enter Question"></textarea>
             </label>
           </fieldset>
         </div>
@@ -61,19 +72,19 @@
           <fieldset>
             <legend>Option 1</legend>
             <label for="">
-              <textarea name="qn-desc" rows="1" cols="80" class = "col-8 justify-content-center" placeholder="Option 1"></textarea>
+              <textarea name="qn-desc" rows="1" cols="80" class = "col-10 justify-content-center" placeholder="Option 1"></textarea>
             </label>
             <legend>Option 2</legend>
             <label for="">
-              <textarea name="qn-desc" rows="1" cols="80" class = "col-8 justify-content-center" placeholder="Option 2"></textarea>
+              <textarea name="qn-desc" rows="1" cols="80" class = "col-10 justify-content-center" placeholder="Option 2"></textarea>
             </label>
             <legend>Option 3</legend>
             <label for="">
-              <textarea name="qn-desc" rows="1" cols="80" class = "col-8 justify-content-center" placeholder="Option 3"></textarea>
+              <textarea name="qn-desc" rows="1" cols="80" class = "col-10 justify-content-center" placeholder="Option 3"></textarea>
             </label>
             <legend>Option 4</legend>
             <label for="">
-              <textarea name="qn-desc" rows="1" cols="80" class = "col-8 justify-content-center" placeholder="Option 4"></textarea>
+              <textarea name="qn-desc" rows="1" cols="80" class = "col-10 justify-content-center" placeholder="Option 4"></textarea>
             </label>
           </fieldset>
         </div>
@@ -89,6 +100,7 @@
           </fieldset>
         </div>
 
+        <button class = "btn btn-success" type="button" name="button">Add</button>
       </div>
     </form>
 
