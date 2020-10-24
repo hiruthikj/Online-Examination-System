@@ -5,6 +5,7 @@
   "main": "add-question.html",
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
     "jquery": "^3.3.1",
     "lite-server": "^2.5.4",
     "popper.js": "^1.12.9"
