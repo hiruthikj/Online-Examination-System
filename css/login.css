@@ -140,37 +140,12 @@ color: rgb(104, 145, 162);
 color: rgb(12, 97, 33);
 }
 
-/* old code */
-
-/* h1{
+#pageTitle{
   text-align: center;
+  font-size: 40px;
+  /* margin: 40px; */
 }
 
-form {
-    padding: 300px;
-    padding-top: 10px;
+#invalidPwd{
+  display: none;
 }
-
-
-
-.container {
-        padding: 40px;
-        background-color: lightblue;
-    }
-
-body{
-    background-image: url("../img/blurred.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-input[type=text], input[type=password] {
-        width: 100%;
-        margin: 8px 0;
-        padding: 12px 20px;
-        display: inline-block;
-        border: 2px blue;
-        box-sizing: border-box;
-    } */

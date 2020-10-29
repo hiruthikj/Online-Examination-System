@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+    <!-- <link rel="stylesheet" href="css/studenthome.css"> -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-extend-sm bg-primary navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" id="univLogo" href="#"><span class="fa fa-university"> Online Exam System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id='Navbar'>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#"><span class="fa fa-home"></span> Home</a>
+          <a class="nav-item nav-link" href="#"><span class="fa fa-pencil-square"></span> Exams</a>
+          <a class="nav-item nav-link" href="#"><span class="fa fa-list-alt"></span> Scores</a>
+          <a class="nav-item nav-link" href="#"><span class="fa fa-user"></span> My Details</a>
+        </div>
+
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link ml-auto" href="#"><span class="fa fa-sign-out"></span> Log Out</a>
+        </div>
+    </div>
+  </nav>
+
+  <ol class="breadcrumb container">
+    <li class="breadcrumb-item active"><a href="#">Home</a></li>
+  </ol>
+
+  <div class="jumbotron">
+    <h1 class="display-5">Welcome {{NAME}}!</h1>
+    <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4"> -->
+    <p>Here are your courses [Delete this line if u want]</p>
+  </div>
+
+  <div class="courses-container">
+  	<div class="course">
+  		<div class="course-preview">
+  			<h6>15CSE367</h6>
+  			<h2>JavaScript Fundamentals</h2>
+  			<a href="#">Course Details <i class="fa fa-chevron-right"></i></a>
+  		</div>
+  		<div class="course-info">
+  			<!-- <div class="progress-container">
+  				<div class="progress"></div>
+  				<span class="progress-text">
+  					6/9 Challenges
+  				</span>
+  			</div> -->
+  			<h6>Chapter 4</h6>
+  			<h2>Callbacks & Closures</h2>
+  			<button class="btn">Continue</button>
+  		</div>
+  	</div>
+  </div>
+
+<!-- SOCIAL PANEL HTML -->
+  <div class="social-panel-container">
+  	<div class="social-panel">
+  		<p>Created with <i class="fa fa-heart"></i> by
+  			<a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
+  		<button class="close-btn"><i class="fas fa-times"></i></button>
+  		<h4>Get in touch on</h4>
+  		<ul>
+  			<li>
+  				<a href="https://www.patreon.com/florinpop17" target="_blank">
+  					<i class="fab fa-discord"></i>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="https://twitter.com/florinpop1705" target="_blank">
+  					<i class="fab fa-twitter"></i>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="https://linkedin.com/in/florinpop17" target="_blank">
+  					<i class="fab fa-linkedin"></i>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="https://facebook.com/florinpop17" target="_blank">
+  					<i class="fab fa-facebook"></i>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="https://instagram.com/florinpop17" target="_blank">
+  					<i class="fab fa-instagram"></i>
+  				</a>
+  			</li>
+  		</ul>
+  	</div>
+  </div>
+  <!-- <button class="floating-btn">
+  	Get in Touch
+  </button> -->
+
+  <!-- <div class="floating-text">
+  	Part of <a href="https://florin-pop.com/blog/2019/09/100-days-100-projects" target="_blank">#100Days100Projects</a>
+  </div> -->
+
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

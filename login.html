@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="/css/login.css">
 
     </head>
     <body>
@@ -19,12 +19,15 @@
     <div class="container">
       <div class="card card-container">
 
-          <img src="img/university.svg" alt="university logo">
+          <img src="/img/university.svg" alt="university logo">
+          <h1 id="#pageTitle">ONLINE EXAM SYSTEM</h1>
+
           <p id="profile-name" class="profile-name-card"></p>
-          <form class="form-signin">
+
+          <form class="form-signin" action="auth" method="post">
               <span id="reauth-userid" class="reauth-userid"></span>
-              <input type="userid" id="inputuserid" class="form-control" placeholder="User ID" required autofocus>
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <input type="userid" id="inputuserid" name="username" class="form-control" placeholder="User ID" required autofocus>
+              <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
               <div id="remember" class="checkbox">
                   <label>
                       <input type="checkbox" value="remember-me"> Remember me
@@ -32,15 +35,18 @@
               </div>
               <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
           </form><!-- /form -->
-          <a href="#" class="forgot-password">
+
+          <button type="button" class="btn btn-danger" disabled id="invalidPwd">Invalid User ID or Password!</button>
+          <!-- <a href="#" class="forgot-password">
               Forgot the password?
-          </a>
+          </a> -->
       </div><!-- /card-container -->
     </div><!-- /container -->
 
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js/login.js"></script>
+        <!-- <script src="js/login.js"></script> -->
+        <script src="js/login.js" defer></script>
     </body>
 </html>
