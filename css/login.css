@@ -140,7 +140,22 @@ color: rgb(104, 145, 162);
 color: rgb(12, 97, 33);
 }
 
+<<<<<<< HEAD
 #pageTitle{
+=======
+h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+#invalidPwd{
+  display: none;
+}
+
+/* old code */
+
+/* h1{
+>>>>>>> 414076a3fc9bf0affd99c09330de92c0d8c85049
   text-align: center;
   font-size: 40px;
   /* margin: 40px; */
