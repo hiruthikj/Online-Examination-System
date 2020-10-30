@@ -8,25 +8,23 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-        <link rel="stylesheet" href="/css/login.css">
+
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="css/login.css">
 
     </head>
     <body>
 
     <div class="container">
       <div class="card card-container">
-
-          <img src="/img/university.svg" alt="university logo">
+          <p id="profile-name" class="profile-name-card"><img src="img/university.svg" alt="university logo"></p>
           <h1 id="#pageTitle">ONLINE EXAM SYSTEM</h1>
-
-          <p id="profile-name" class="profile-name-card"></p>
 
           <form class="form-signin" action="auth" method="post">
               <span id="reauth-userid" class="reauth-userid"></span>
-              <input type="userid" id="inputuserid" name="username" class="form-control" placeholder="User ID" required autofocus>
+              <input type="userid" id="inputUserID" name="username" class="form-control" placeholder="User ID" required autofocus>
               <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
               <div id="remember" class="checkbox">
                   <label>
@@ -43,10 +41,10 @@
       </div><!-- /card-container -->
     </div><!-- /container -->
 
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- <script src="js/login.js"></script> -->
-        <script src="js/login.js" defer></script>
+        <!-- <script src="js/login.js" defer></script> -->
     </body>
 </html>

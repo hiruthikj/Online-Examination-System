@@ -2,7 +2,7 @@
   "name": "online-examination-system",
   "version": "1.0.0",
   "description": "",
-  "main": "add-question.html",
+  "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
@@ -24,9 +24,8 @@
     "font-awesome": "^4.7.0"
   },
   "scripts": {
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "start": "npx nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

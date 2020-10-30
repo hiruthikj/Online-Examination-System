@@ -33,12 +33,13 @@ app.set('view engine', 'pug');
 app.set('views', '.')
 
 app.get('/', function(request, response) {
-	response.sendFile(path.join(__dirname + '/../login.html'));
+	response.render('/public/login.html')
+	// response.sendFile(path.join(__dirname + '/public/login.html'));
 	// response.render('index.html');
 });
 
-app.post('/auth', function(request, response) {
-	// console.log('Inside posty auth');
+app.post('/login/auth', function(request, response) {
+	console.log('Inside posty auth');
 	var username = request.body.username;
 	var password = request.body.password;
 	if (username && password) {
@@ -46,7 +47,7 @@ app.post('/auth', function(request, response) {
 			if (results.length > 0) {
 				request.session.loggedin = true;
 				request.session.username = username;
-				return response.redirect('/home');
+				return response.render('/public/home.html');
 			} else {
 				// console.log('Result is ' + results);
 				response.send('Incorrect Username and/or Password!');
@@ -62,7 +63,7 @@ app.post('/auth', function(request, response) {
 
 app.get('/home', function(request, response) {
 	// console.log('Inside HOME');
-	response.redirect('home.html');
+	response.redirect('/public/home.html');
 	// if (request.session.loggedin) {
 	// 	response.sendFile(path.join(__dirname + '/../home.html'));
 	// 	// response.send('Welcome back, ' + request.session.username + '!');
